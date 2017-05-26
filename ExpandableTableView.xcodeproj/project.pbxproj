@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1EA43351ED8135100F1F208 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EA43341ED8135100F1F208 /* Section.swift */; };
+		E1EA43371ED8255300F1F208 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EA43361ED8255300F1F208 /* ExpandableHeaderView.swift */; };
+		E1EA43391ED82EA200F1F208 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EA43381ED82EA200F1F208 /* check.png */; };
+		E1EA433B1ED82EBE00F1F208 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EA433A1ED82EBE00F1F208 /* TableViewCell.swift */; };
 		E1F44C501ED7E79100CB9489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F44C4F1ED7E79100CB9489 /* AppDelegate.swift */; };
 		E1F44C521ED7E79100CB9489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F44C511ED7E79100CB9489 /* ViewController.swift */; };
 		E1F44C551ED7E79100CB9489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F44C531ED7E79100CB9489 /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1EA43341ED8135100F1F208 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		E1EA43361ED8255300F1F208 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
+		E1EA43381ED82EA200F1F208 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		E1EA433A1ED82EBE00F1F208 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		E1F44C4C1ED7E79100CB9489 /* ExpandableTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F44C4F1ED7E79100CB9489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1F44C511ED7E79100CB9489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,13 +107,17 @@
 		E1F44C4E1ED7E79100CB9489 /* ExpandableTableView */ = {
 			isa = PBXGroup;
 			children = (
+				E1EA43381ED82EA200F1F208 /* check.png */,
 				E1F44C4F1ED7E79100CB9489 /* AppDelegate.swift */,
 				E1F44C511ED7E79100CB9489 /* ViewController.swift */,
 				E1F44C531ED7E79100CB9489 /* Main.storyboard */,
+				E1EA43341ED8135100F1F208 /* Section.swift */,
 				E1F44C591ED7E79100CB9489 /* Assets.xcassets */,
 				E1F44C5B1ED7E79100CB9489 /* LaunchScreen.storyboard */,
 				E1F44C5E1ED7E79100CB9489 /* Info.plist */,
 				E1F44C561ED7E79100CB9489 /* ExpandableTableView.xcdatamodeld */,
+				E1EA43361ED8255300F1F208 /* ExpandableHeaderView.swift */,
+				E1EA433A1ED82EBE00F1F208 /* TableViewCell.swift */,
 			);
 			path = ExpandableTableView;
 			sourceTree = "<group>";
@@ -237,6 +249,7 @@
 			files = (
 				E1F44C5D1ED7E79100CB9489 /* LaunchScreen.storyboard in Resources */,
 				E1F44C5A1ED7E79100CB9489 /* Assets.xcassets in Resources */,
+				E1EA43391ED82EA200F1F208 /* check.png in Resources */,
 				E1F44C551ED7E79100CB9489 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1F44C521ED7E79100CB9489 /* ViewController.swift in Sources */,
+				E1EA43351ED8135100F1F208 /* Section.swift in Sources */,
+				E1EA43371ED8255300F1F208 /* ExpandableHeaderView.swift in Sources */,
+				E1EA433B1ED82EBE00F1F208 /* TableViewCell.swift in Sources */,
 				E1F44C501ED7E79100CB9489 /* AppDelegate.swift in Sources */,
 				E1F44C581ED7E79100CB9489 /* ExpandableTableView.xcdatamodeld in Sources */,
 			);
@@ -511,6 +527,7 @@
 				E1F44C791ED7E79200CB9489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1F44C7A1ED7E79200CB9489 /* Build configuration list for PBXNativeTarget "ExpandableTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +536,7 @@
 				E1F44C7C1ED7E79200CB9489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1F44C7D1ED7E79200CB9489 /* Build configuration list for PBXNativeTarget "ExpandableTableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +545,7 @@
 				E1F44C7F1ED7E79200CB9489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
