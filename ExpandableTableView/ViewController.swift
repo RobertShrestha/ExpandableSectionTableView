@@ -21,6 +21,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
                 movies: ["The Walking Dead", "Insidious", "Conjuring"],
                 expanded: false)
     ]
+    var openedSection=Int()
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -67,7 +68,27 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 
     }
     func toggleSection(header: ExpandableHeaderView, section: Int) {
-        sections[section].expanded = !sections[section].expanded
+        //sections[section].expanded = !sections[section].expanded
+        if openedSection==section{
+            sections[section].expanded = !sections[section].expanded
+            openedSection=100
+            print(openedSection)
+        }else{
+            if(openedSection==100){
+                sections[section].expanded=true
+                openedSection=section
+                print(openedSection)
+            }else{
+                
+                sections[openedSection].expanded=false
+                
+                sections[section].expanded=true
+                openedSection=section
+                print(openedSection)
+                
+            }
+        }
+
         tableView.beginUpdates()
         for i in 0..<sections[section].movies.count{
             tableView.reloadRows(at: [IndexPath(row:i,section:section)], with: .automatic)
