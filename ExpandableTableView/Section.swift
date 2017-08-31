@@ -8,14 +8,38 @@
 
 import Foundation
 
-struct Section{
-    var genre:String!
-    var movies:[String]!
-    var expanded:Bool!
+
+
+struct MailModel {
+    var mailId=String()
+    var mailSubject=String()
+    var mailDate=String()
+    var mailStatus=String()
+    var mailAttachment=Bool()
     
-    init(genre:String,movies:[String],expanded:Bool) {
-        self.genre=genre
-        self.movies=movies
+}
+struct MailDetailModel{
+    var mailSubject = String()
+    var mailMessage = String()
+    var mailRecievedOn = String()
+    var mailPartner = String()
+    var mailAttachment = [NSDictionary]()
+    var mailDraft = Bool()
+}
+struct MailNewDetailModel{
+    var allowedSize = Int()
+    var allowedType = [String]()
+    var allowedPeople = [NSDictionary]()
+}
+
+struct Section{
+    var title=String()
+    var mails=[MailModel]()
+    var expanded=Bool()
+    
+    init(title:String,mails:[MailModel],expanded:Bool) {
+        self.title=title
+        self.mails=mails
         self.expanded=expanded
     }
     
